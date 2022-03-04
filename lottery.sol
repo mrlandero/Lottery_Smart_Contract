@@ -17,3 +17,9 @@ contract Lottery {
         require(msg.value == 0.1 ether, "You can only send .1 ETH!"); // We can assign a suffix for the unit we are using (ether)
         players.push(payable(msg.sender));  // Adding the player to the Players array
     }
+
+    function getBalance() public view returns(uint){ // To access the balance of the contract
+        // Only the manager of the contract can see the balance of the contract
+        require(msg.sender == manager, "You are not authorized to view the balance of this contract!");
+        return address(this).balance;
+    }
