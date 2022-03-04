@@ -28,3 +28,21 @@ contract Lottery {
     function random() public view returns(uint){
         return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp, players.length)));
     }
+
+    // Selecting the winner and sending contract balance
+    function pickWinner() public {
+        require(msg.sender == manager, "You are not authorized to select the winner!"); // Only contract owner can perform this
+        require(players.length >= 3, "There are not enough entries to select a winner yet!"); // Must have at least 3 participants to select winner
+
+        uint r = random(); // Calling the random() function to generate a random uint named `r`
+        address payable winner; // The address that is selected and will receive all of the funds
+
+        uint index = r % players.length; // This will result in a remainder that will be the index of the winning address
+        winner = players[index]; // Assign the winning index value to the address
+        
+        // Transfer the contract balance to the selected winner
+        winner.transfer(getBalance());
+        players = new address payable[](0); // This resets the lottery and starts with an empty player[] array 
+    }
+
+}
