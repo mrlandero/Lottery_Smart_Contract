@@ -23,3 +23,8 @@ contract Lottery {
         require(msg.sender == manager, "You are not authorized to view the balance of this contract!");
         return address(this).balance;
     }
+
+    // Generate a random number in solidity in order to select the lottery winner
+    function random() public view returns(uint){
+        return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp, players.length)));
+    }
