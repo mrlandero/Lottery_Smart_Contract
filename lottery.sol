@@ -14,7 +14,7 @@ contract Lottery {
     // Entering the lottery
     receive() external payable {  // In order for the contract to receive ETH - Must be included in contract
         // Validation - The require statement
-        require(msg.value == 0.2 ether, "You can only send .1 ETH!"); // We can assign a suffix for the unit we are using (ether)
+        require(msg.value == 0.2 ether, "You can only send 0.2 ETH!"); // We can assign a suffix for the unit we are using (ether)
         players.push(payable(msg.sender));  // Adding the player to the Players array
     }
 
@@ -32,7 +32,7 @@ contract Lottery {
     // Selecting the winner and sending contract balance
     function pickWinner() public {
         require(msg.sender == manager, "You are not authorized to select the winner!"); // Only contract owner can perform this
-        require(players.length >= 3, "There are not enough entries to select a winner yet!"); // Must have at least 3 participants to select winner
+        require(players.length >= 5, "There are not enough entries to select a winner yet!"); // Must have at least 3 participants to select winner
 
         uint r = random(); // Calling the random() function to generate a random uint named `r`
         address payable winner; // The address that is selected and will receive all of the funds
