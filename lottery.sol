@@ -14,7 +14,7 @@ contract Lottery {
     // Entering the lottery
     receive() external payable {  // In order for the contract to receive ETH - Must be included in contract
         // Validation - The require statement
-        require(msg.value == 0.1 ether, "You can only send .1 ETH!"); // We can assign a suffix for the unit we are using (ether)
+        require(msg.value == 0.2 ether, "You can only send .1 ETH!"); // We can assign a suffix for the unit we are using (ether)
         players.push(payable(msg.sender));  // Adding the player to the Players array
     }
 
