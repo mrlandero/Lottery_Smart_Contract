@@ -63,3 +63,17 @@ In the `ENVIRONMENT` field of the `DEPLOY` section, in the Remix sidebar, select
 
 Before continuing to compiling and deploying our contract, we should import at least 4 more accounts from Ganache into MetaMask. The lottery needs at least 5 entries in order to pick a winner. We have only imported 1 account, so we need to import a few more in order to be able to conduct the lottery. In our case, we imported a total of 6 accounts.
 
+It is now time to compile our smart contract:
+
+![Compile Contract](images/seven_compile_contract.png)
+
+Make sure you are selecting the correct compiler, in this case `0.8.7+commit.e28d00a7`. Once the correct compiler is selected click on the blue `Compile lottery.sol` button to compile. 
+
+If there are no compilation errors, we should see a green check mark next to the compile icon. 
+
+Great! Now that we have a successfully compiled contract, we can deploy it:
+
+![Deploy Contract](images/eight_deploy_contract.png)
+
+Click on the deploy icon, below the compile icon, to be taken to the deployment section. In the `Contract` field, we need to make sure we are deploying the correct contract, for us this is `Lottery-Udemy-Master Ethereum & Solidity/lottery.sol`. Once the correct contract is selected, we open MetaMask and make sure we are working with the account labeled `FIRST`. This will be the account that deploys the contract, and thus the contract's manager. Once the correct account and contract are selceted, we click on the orange `Deploy` button.<br>
+You will 
