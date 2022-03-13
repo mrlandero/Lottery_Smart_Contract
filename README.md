@@ -51,4 +51,15 @@ When you re-launch MetaMask, there will be a message asking us to connect the ac
 
 Let's change the account's name to something we'll associate with this project:
 
-![]()
+![Change Account Name](images/five_change_account_name.png)
+
+Let's call this first account `FIRST`. 
+
+We also need to make sure that we change our Virtual Machine from the `Javascript VM` to `Injected WEB3`:
+
+![Injected Web3](images/six_injected_web3.png)
+
+In the `ENVIRONMENT` field of the `DEPLOY` section, in the Remix sidebar, select `Injected Web3`. This will help us make use of our Ganache and MetaMask connections to deploy and test this contract. 
+
+Before continuing to compiling and deploying our contract, we should import at least 4 more accounts from Ganache into MetaMask. The lottery needs at least 5 entries in order to pick a winner. We have only imported 1 account, so we need to import a few more in order to be able to conduct the lottery. In our case, we imported a total of 6 accounts.
+
