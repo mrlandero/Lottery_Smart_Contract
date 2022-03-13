@@ -20,3 +20,17 @@ Now, let's intall MetaMask, and we'll be ready to run this lottery:
 **[Metamask Digital Wallet](https://metamask.io/)** - Follow the installation instructions for your Operating System.
 
 We are now done with all of the installations we need to run our application.
+
+---
+
+## Usage Guide
+
+We need to begin with our connections to Ganache and MetaMask. We will be using Ganache as our test blockchain and MetaMask as our EOA (Externally Owned Account). We use MetaMask for its decentralized nature. 
+
+When you open Ganache, select the `QUICKSTART` option. Once you have the test blockchain running, go to the settings icon and change the name of the test chain to `LOTTERY` in order to save this workspace. 
+
+![Ganache Lottery Launch](images/one_ganache_lottery_workspace.png)
+
+In the preceding image we can see the name of the workspace was updated to `LOTTERY`, and we have several accounts, each starting with a balance of 100 ETH.
+
+Next, we need to import our Ganache accounts into MetaMask:
