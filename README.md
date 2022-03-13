@@ -76,4 +76,23 @@ Great! Now that we have a successfully compiled contract, we can deploy it:
 ![Deploy Contract](images/eight_deploy_contract.png)
 
 Click on the deploy icon, below the compile icon, to be taken to the deployment section. In the `Contract` field, we need to make sure we are deploying the correct contract, for us this is `Lottery-Udemy-Master Ethereum & Solidity/lottery.sol`. Once the correct contract is selected, we open MetaMask and make sure we are working with the account labeled `FIRST`. This will be the account that deploys the contract, and thus the contract's manager. Once the correct account and contract are selceted, we click on the orange `Deploy` button.<br>
-You will 
+You will be prompted by MetaMask to confirm the transaction. Click on the blue `Confirm` button to authorize the transaction. 
+Congratulations! We have now compiled and deployed our Lottery Smart Contract. 
+
+We can use the Remix IDE to verify that our contract was deployed successfully:
+
+![Remix Deploy Confirmation](images/nine_deployment_confirmation.png)
+
+In the `Terminal` view of the Remix IDE we can see a confirmation. It has a green check mark stating `true Transaction mined and executed succeed`. It also provides us with the transaction hash. We have now confirmed our contract deployment. 
+
+We can also verify the contract creation through Ganache:
+
+![Ganache Contract Creation](images/ten_ganache_contract_creation.png)
+
+In the Ganache workspace, click on the `TRANSACTIONS` tab to review the transactions. We only have one transaction and this transaction receipt displays a red label reading `CONTRACT CREATION`. This confirms that our contract was created. 
+
+We can also check the balance of the account that deployed the contract. In our case, the first Ganache account:
+
+![First Account Balance](images/eleven_ganache_first_account_balance.png)
+
+We can see that this account now has a balance of 99.99 ETH. It started with 100 ETH. This is because in order to deploy the contract, this account needed to pay the gas fee for executing the transaction. Therefore, they now have less than the 100 ETH they began with. 
