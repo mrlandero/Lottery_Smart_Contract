@@ -96,3 +96,21 @@ We can also check the balance of the account that deployed the contract. In our 
 ![First Account Balance](images/eleven_ganache_first_account_balance.png)
 
 We can see that this account now has a balance of 99.99 ETH. It started with 100 ETH. This is because in order to deploy the contract, this account needed to pay the gas fee for executing the transaction. Therefore, they now have less than the 100 ETH they began with. 
+
+We can also verify the `FIRST` account's balance via MetaMask:
+
+![First Acoount MetaMask Balance](images/twelve_metamask_first_account_balance.png)
+
+We can see here the exact amount of this account's balance. It also confirms for us that this account deployed the contract. 
+
+Lets now switch to the `SECOND` account in order to enter the lottery:
+
+![Switch to Second Account](images/thirteen_switch_to_second_account.png)
+
+We can see here that we are, in fact, working with the `SECOND` account. We are going to enter the lottery with this account.
+
+We will use the Remix IDE sidebar in order to interact with the contract. However, this method does not allow us to input decimals. So we need to convert our 0.2 ETH to wei. To accomplish this we can go to **[ETH Converter](https://eth-converter.com/)**. 
+
+![ETH Converter](images/fourteen_go_to_eth_converter.png)
+
+In the `Ether` field, input 0.2, as that is the lottery entry amount. This should auto-populate the `Wei` field. Copy the amount of wei so we can input this into the `VALUE` field of the deployment section. 
