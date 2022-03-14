@@ -227,3 +227,10 @@ Let's navigate to the Remix IDE to confirm our transaction took place:
 
 In the `Terminal` view of the Remix IDE, we can see that the transaction to pick a winner was successful. 
 
+Finally, let's go to Ganache to see which account received the contract's balance:
+
+![Balances After Picking](images/thirtyfour_balances_after_picking.png)
+
+The winner was the `FIFTH` account. Their balance was 99.80 ETH before picking the winner, and their final balance was 101.20 ETH. They received the 1.4 ETH from the contract. 
+
+Great! We have conducted our first Smart Contract Lottery!!
