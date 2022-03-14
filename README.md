@@ -202,3 +202,14 @@ This pop-up message stating, `Gas estimation failed`, is our first indication th
 Once we click on `Send Transaction`, we will see the transaction fail in two places. First, the `Terminal` view of the Remix IDE will signal that the transaction errored out.<br>
 We can also see a `Failed transaction` message from Metamask on the bottom-right of our screen. This is a great safety measure aimed at preventing just anyone from picking a winner. 
 
+We can also navigate to MetaMask to verify that the transaction failed:
+
+![MetaMask Fail Confirmation](images/thirty_matamask_fail_confirmation.png)
+
+In the `SIXTH` account, we can see in the `Activity` tab, that this account tried to pick the winner, but the transaction failed. 
+
+Let's take a look at the balances in our Ganache Test Blockchain before the picking of the winner:
+
+![Balances Before Picking](images/thirtyone_account_balances_before_picking.png)
+
+Here we can see that the first 6 accounts have entered the lottery. The `FIRST` and `SIXTH` accounts have lower balances because they performed 2 transactions each. 
