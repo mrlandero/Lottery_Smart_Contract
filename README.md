@@ -128,3 +128,23 @@ We will be prompted by MetaMask to confirm the transaction:
 ![MetaMask Confirmation](images/seventeen_metamask_value_confirmation.png)
 
 Paying attention to the value, it reads 0.2 ETH, so we are sending the correct amount to enter the lottery. 
+
+We must now confirm the transaction through MetaMask:
+
+![MetaMask Confirm Transaction](images/eighteen_metamask_confirm_transaction.png)
+
+Once we've verified that the entry amount is correct, we click on the blue `Confirm` button to execute the transaction. 
+
+Now, we can verify this transaction via the Remix IDE:
+
+![Remix Transaction Confirmation](images/nineteen_remix_confirm_transaction.png)
+
+In the `Terminal` view of the Remix IDE we can see that the transaction was successful. It has a green check mark, the status states: `true Transaction mined and execution succeed`, and it also provides us with the transaction hash.<br>
+
+Let's turn to Ganache to verify our transaction via our test blockchain:
+
+![Ganache Transaction Confirmation](images/twenty_ganache_transaction_confirmation.png)
+
+When we click on the `TRANSACTIONS` tab, we can see that there are two transactions. The first one was the contract creation, and the second is the latest contract call when the first lottery entry was made. 
+
+Great! We now have one entry into our lottery. 
