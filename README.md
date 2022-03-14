@@ -241,3 +241,8 @@ Great! We have conducted our first Smart Contract Lottery!!
 
 Tony Landero
 
+---
+
+## License
+
+MIT
