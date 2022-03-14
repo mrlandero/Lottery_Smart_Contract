@@ -186,3 +186,19 @@ One interesting aspect of this lottery is that the same address can enter multip
 
 This is account `SIX`'s first entry into the lottery. They are the player at position 5 of our players' array. 
 
+![Account Six Second Entry](images/twentyseven_account_six_second_entry_and_final_contract_balance.png)
+
+This is account `SIX`'s second lottery entry. They are the player at position 6 of our players' array. They have now entered the lottery twice so they have a better chance of winning than the other participants.<br>
+We can also see the final balance of the contract. There are 7 total entries. We have six accounts, and account `SIX` entered twice. The balance is 1.4 ETH, in Wei. Once the `pickWinner` function is executed, the winning account will receive this amount.
+
+Now, just to verify that only the contract manager can execute the `pickWinner` function, we will try to execute it using account `SIX`:
+
+![Account Six Picking Winner](images/twentyeight_account_six_pick_winner.png)
+
+This pop-up message stating, `Gas estimation failed`, is our first indication that this account will not be able to execute this transaction. 
+
+![Picking Winner Fail](images/twentynine_pick_winner_fail.png)
+
+Once we click on `Send Transaction`, we will see the transaction fail in two places. First, the `Terminal` view of the Remix IDE will signal that the transaction errored out.<br>
+We can also see a `Failed transaction` message from Metamask on the bottom-right of our screen. This is a great safety measure aimed at preventing just anyone from picking a winner. 
+
