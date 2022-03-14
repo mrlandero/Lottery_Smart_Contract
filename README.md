@@ -147,4 +147,17 @@ Let's turn to Ganache to verify our transaction via our test blockchain:
 
 When we click on the `TRANSACTIONS` tab, we can see that there are two transactions. The first one was the contract creation, and the second is the latest contract call when the first lottery entry was made. 
 
-Great! We now have one entry into our lottery. 
+Let's check the contract's balance after this first entry. It is extremely important to make sure that we are checking the balance with the `FIRST` account. This is because this address is the contract's manager, and it is required that **ONLY** the contract manager is authorized to check balance. 
+
+![Get Balance](images/twentyone_get_balance_after_first_transaction.png)
+
+Once the contract manager, (`FIRST` account), clicks on the `getBalance` function, we should see the balance of 0.2 ETH, in Wei.  
+
+Great! We now have one entry into our lottery.<br>
+Now, we must submit at least 4 more entries before we can pick a winner.
+
+For the next entry, we'll submit the payment via MetaMask instead of interacting with the contract through the Remix IDE. 
+
+![Enter Via MetaMask](images/twentytwo_send_from_metamask.png)
+
+We can copy the contract's address either through Remix or Ganache. Then, from MetaMask, click on `Send`. In the address field, paste the contract's address. Then, in the `Amount` field, enter 0.2 ETH. The Gas Price should automatically populate. Once we are ready to execute the transaction, we click the blue `Next` button. 
