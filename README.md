@@ -180,3 +180,9 @@ Let's check the contract's balance after this second entry:
 
 We can now see that the contract's balance is 0.4 ETH, in Wei. So we have successfully entered 2 accounts into the lottery.
 
+One interesting aspect of this lottery is that the same address can enter multiple times:
+
+![Account Six First Entry](images/twentysix_account_six_first_entry.png)
+
+This is account `SIX`'s first entry into the lottery. They are the player at position 5 of our players' array. 
+
