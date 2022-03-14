@@ -168,3 +168,15 @@ We now need to confirm the transaction via MetaMask:
 
 Before we confirm the transaction, we just need to verify that the amount we are sending is correct. In this case, we see that we are sending 0.2 ETH to the contract. So we can confirm this transaction. 
 
+Let's verify that we interacted with the contract via Metamask:
+
+![MetaMask Contract Interaction](images/twentyfour_metamask_contract_interaction.png)
+
+As we can see, account `SECOND` sent 0.2 ETH to the contract. We can see their balance debited this amount, plus the gas fee, and the `Activity` tab states that we have interacted with the contract. 
+
+Let's check the contract's balance after this second entry:
+
+![Contract Balance](images/twentyfive_contract_balance.png)
+
+We can now see that the contract's balance is 0.4 ETH, in Wei. So we have successfully entered 2 accounts into the lottery.
+
