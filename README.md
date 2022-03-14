@@ -234,3 +234,10 @@ Finally, let's go to Ganache to see which account received the contract's balanc
 The winner was the `FIFTH` account. Their balance was 99.80 ETH before picking the winner, and their final balance was 101.20 ETH. They received the 1.4 ETH from the contract. 
 
 Great! We have conducted our first Smart Contract Lottery!!
+
+---
+
+## Contributors
+
+Tony Landero
+
