@@ -114,3 +114,17 @@ We will use the Remix IDE sidebar in order to interact with the contract. Howeve
 ![ETH Converter](images/fourteen_go_to_eth_converter.png)
 
 In the `Ether` field, input 0.2, as that is the lottery entry amount. This should auto-populate the `Wei` field. Copy the amount of wei so we can input this into the `VALUE` field of the deployment section. 
+
+![Paste Wei Value](images/fifteen_paste_in_the_value_field.png)
+
+In the deployment section of the Remix IDE, right above the `CONTRACT` field is the `VALUE` field. This is where we paste the amount of Wei to execute this transaction. Make sure you select `Wei` from the dropdown menu. 
+
+![Click Transact](images/sixteen_click_transact.png)
+
+Once we open up the contract functions, we should see a section labeled `Low level interactions`. Within that section you should see a button reading `Transact`. Once you click on that button, the transaction will be started. 
+
+We will be prompted by MetaMask to confirm the transaction:
+
+![MetaMask Confirmation](images/seventeen_metamask_value_confirmation.png)
+
+Paying attention to the value, it reads 0.2 ETH, so we are sending the correct amount to enter the lottery. 
