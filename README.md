@@ -212,4 +212,18 @@ Let's take a look at the balances in our Ganache Test Blockchain before the pick
 
 ![Balances Before Picking](images/thirtyone_account_balances_before_picking.png)
 
-Here we can see that the first 6 accounts have entered the lottery. The `FIRST` and `SIXTH` accounts have lower balances because they performed 2 transactions each. 
+Here we can see that the first 6 accounts have entered the lottery. The `FIRST` and `SIXTH` accounts have lower balances because they performed 2 transactions each.<br>
+After picking the winner, we will see the selected account with a noticeably higher balance.
+
+Now, making sure we are using the `FIRST` account, lets execute the `pickWinner` function:
+
+![Picking Winner](images/thirtytwo_pick_winner_and_metamask_confirmation.png)
+
+Once we click on `pickWinner` we will receive a confirmation request from MetaMask. Once we click on `Confirm`, the winner will be selected, and the contract balance will be transferred to their address. 
+
+Let's navigate to the Remix IDE to confirm our transaction took place:
+
+![Remix Winner Confirmation](images/thirtythree_remix_terminal_confirmation.png)
+
+In the `Terminal` view of the Remix IDE, we can see that the transaction to pick a winner was successful. 
+
