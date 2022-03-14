@@ -161,3 +161,10 @@ For the next entry, we'll submit the payment via MetaMask instead of interacting
 ![Enter Via MetaMask](images/twentytwo_send_from_metamask.png)
 
 We can copy the contract's address either through Remix or Ganache. Then, from MetaMask, click on `Send`. In the address field, paste the contract's address. Then, in the `Amount` field, enter 0.2 ETH. The Gas Price should automatically populate. Once we are ready to execute the transaction, we click the blue `Next` button. 
+
+We now need to confirm the transaction via MetaMask:
+
+![MetaMask Transaction Confirmation](images/twentythree_metamask_value_confirmation.png)
+
+Before we confirm the transaction, we just need to verify that the amount we are sending is correct. In this case, we see that we are sending 0.2 ETH to the contract. So we can confirm this transaction. 
+
